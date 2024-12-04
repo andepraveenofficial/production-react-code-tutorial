@@ -1,0 +1,41 @@
+########### Todos ###########
+
+@refreshToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0OWM2YjUyMS1iZDljLTQ0YmItYWM0NC02NTI0NDNkODk5ZmIiLCJpYXQiOjE3MzIyNzcyNDQsImV4cCI6MTczMjg4MjA0NH0.P-MffZx85fkoEU1uhbsph9CogwTYGDiXcW02jzsy8tU
+
+### Get All Todos
+GET http://localhost:5000/api/v1/todos
+Cookie: refreshToken={{refreshToken}}
+
+
+### Create Todo
+POST http://localhost:5000/api/v1/todos
+Cookie: refreshToken={{refreshToken}}
+Content-Type: application/json
+
+{
+    "title": "New Todo",
+    "description": "Finish the project and submit it on time."
+}
+
+### Get Todo By Id
+@todoId = 4556e85c-96d1-4e6a-b4a9-933973b363a3
+
+GET http://localhost:5000/api/v1/todos/{{todoId}}
+Cookie: refreshToken={{refreshToken}}
+
+
+### Update Todo
+PUT http://localhost:5000/api/v1/todos/{{todoId}}
+Cookie: refreshToken={{refreshToken}}
+Content-Type: application/json
+
+{
+    "title": "Updated Complete project",
+    "description": "Finish the project and submit it by next week.",
+    "status": "IN_PROGRESS"
+}
+
+
+### Delete Todo
+DELETE http://localhost:5000/api/v1/todos/{{todoId}}
+Cookie: refreshToken={{refreshToken}}
