@@ -16,3 +16,7 @@
 14. Authentication
 15. Authorization
 16. Patterns
+
+
+### Server
+- Setup Server for APIs
