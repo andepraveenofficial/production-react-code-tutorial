@@ -9,7 +9,7 @@ import Loading from "../components/Loading";
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
 const Contact = lazy(() => import("../pages/Contact"));
-const NotFound = lazy(() => import("../pages/ErrorPage"));
+const NotFound = lazy(() => import("../pages/NotFound"));
 
 // Wrap lazy loaded components with Suspense
 const withSuspense = (Component: ComponentType) => (
