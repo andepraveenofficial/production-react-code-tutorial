@@ -13,7 +13,7 @@
 11. Error Handling : Pending
 12. Environment Configuration : Pending   
 13. Folder Structure : Pending
-14. Authentication
+14. Authentication : Pending
 15. Authorization : Pending
 16. Patterns : Pending
 
